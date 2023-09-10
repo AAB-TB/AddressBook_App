@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -112,8 +113,10 @@ namespace AddressBook_App
                 for (int i = 0; i < userDataList.Count; i++)
                 {
                     string[] userData = userDataList[i];
+                    string name = userData[0].ToLower();
+                    string postalArea = userData[3].ToLower();
 
-                    if (userData[0].ToLower().Contains(searchTerm) || userData[3].ToLower().Contains(searchTerm))
+                    if (name == searchTerm || postalArea == searchTerm)
                     {
                         searchResultsIndices.Add(i);
                     }
