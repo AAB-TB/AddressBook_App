@@ -36,6 +36,8 @@
             SignOutBtn = new Button();
             RemoveBtn = new Button();
             Reg = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ShowAllUsersBtn = new Button();
             SuspendLayout();
             // 
             // SearchBox
@@ -71,7 +73,7 @@
             // ViewDetailsBtn
             // 
             ViewDetailsBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            ViewDetailsBtn.Location = new Point(699, 248);
+            ViewDetailsBtn.Location = new Point(696, 178);
             ViewDetailsBtn.Name = "ViewDetailsBtn";
             ViewDetailsBtn.Size = new Size(152, 29);
             ViewDetailsBtn.TabIndex = 10;
@@ -121,12 +123,24 @@
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 14;
             // 
+            // ShowAllUsersBtn
+            // 
+            ShowAllUsersBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            ShowAllUsersBtn.Location = new Point(696, 302);
+            ShowAllUsersBtn.Name = "ShowAllUsersBtn";
+            ShowAllUsersBtn.Size = new Size(152, 29);
+            ShowAllUsersBtn.TabIndex = 15;
+            ShowAllUsersBtn.Text = "View All";
+            ShowAllUsersBtn.UseVisualStyleBackColor = true;
+            ShowAllUsersBtn.Click += ShowAllUsersBtn_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
             ClientSize = new Size(882, 553);
+            Controls.Add(ShowAllUsersBtn);
             Controls.Add(Reg);
             Controls.Add(RemoveBtn);
             Controls.Add(SignOutBtn);
@@ -151,5 +165,7 @@
         private Button SignOutBtn;
         private Button RemoveBtn;
         private Label Reg;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button ShowAllUsersBtn;
     }
 }

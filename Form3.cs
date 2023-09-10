@@ -182,5 +182,27 @@ namespace AddressBook_App
             }
         }
 
+        private void ShowAllUsersBtn_Click(object sender, EventArgs e)
+        {
+            DisplayAllUsers();
+        }
+
+        private void DisplayAllUsers()
+        {
+            // Clear the search results indices to show all users
+            searchResultsIndices.Clear();
+
+            // Add all user indices to the search results
+            for (int i = 0; i < userDataList.Count; i++)
+            {
+                searchResultsIndices.Add(i);
+            }
+
+            // Display the search results
+            DisplaySearchResults();
+        }
+
+
+
     }
 }
