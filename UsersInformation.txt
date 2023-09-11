@@ -1,5 +1,2 @@
-Torsten Berglund,Upplandsgatan 67,113 28,Stockholm,+46729408068,berglund.torsten@gmail.com
-LoLa,Upplandsgatan 67,113 28,Stockholm,+46729408068,lola@gmail.com
-Fardin,Sveavägen,112 27,Solna,+467298457,fardin@gmail.com
-Samir,Upplandsgatan 67,113 28,Paris,+4672894578,samir123@gmail.com
-Eric,Sydney Bay,345 67,Sydney,+6175849625,Ericberglund@gmail.com
+df,sd,3,sf,+445,e@d.c
+grinr,dfsaf,66,sf,+586,s@gmai.com
