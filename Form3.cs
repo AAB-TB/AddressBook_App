@@ -25,7 +25,11 @@ namespace AddressBook_App
             InitializeComponent();
 
             // Load user data from a file when the form is created
-            userDataList = LoadUserData();
+            userDataList = LoadUserData(); /* userDataList = [
+                ["Torsten Berglund", " Upplandsgatan 67", " 113 28", " stockholm", " +46785214", " hfgt@ghm.com"],
+                ["Bostonn lund", " Upplan 67", " 113 28", " Dhakackholm", " +46785214", " hfgt@ghm.com"]
+                                                             ]*/
+
             searchResultsIndices = new List<int>();
         }
 
@@ -149,6 +153,7 @@ namespace AddressBook_App
                 // Iterate through the user data list to find matching results.
                 for (int i = 0; i < userDataList.Count; i++)
                 {
+                    // Retrieve the user data at index 'i' from the userDataList
                     string[] userData = userDataList[i];
 
                     // Convert the user's name and postal area to lowercase for case-insensitive comparison.
