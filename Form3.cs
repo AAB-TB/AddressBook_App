@@ -50,13 +50,13 @@ namespace AddressBook_App
                     while ((line = reader.ReadLine()) != null)
                     {
                         // Split the line into parts using a comma as the delimiter.
-                        string[] parts = line.Split(',');
+                        string[] parts = line.Split(',');// creating an array name parts which will have six elements
 
                         // Check if the line has exactly 6 parts, which indicates a valid user record.
                         if (parts.Length == 6)
                         {
                             // Add the valid user data to the 'data' list.
-                            data.Add(parts);
+                            data.Add(parts); // Adding arrays to the data list. 
                         }
                     }
                 }
@@ -77,16 +77,16 @@ namespace AddressBook_App
             listBox1.Items.Clear();
 
             // Iterate through the search result indices stored in 'searchResultsIndices'.
-            foreach (int index in searchResultsIndices)
+            foreach (int index in searchResultsIndices) //foreach loop iterate every elements not from 0
             {
                 // Check if the index is within the valid range of 'userDataList'.
-                if (index >= 0 && index < userDataList.Count)
+               if (index >= 0 && index < userDataList.Count)
                 {
                     // Retrieve the user data for the current index.
                     string[] userData = userDataList[index];
                     // Add the user's name (located at index 0) to the 'listBox1'.
                     listBox1.Items.Add(userData[0]);
-                }
+               }
             }
                     
         }
@@ -149,7 +149,6 @@ namespace AddressBook_App
                 // Create a regular expression pattern using the search term.
                 // The pattern matches words that start with the search term in a case-insensitive manner.
                 Regex regex = new Regex($@"\b{Regex.Escape(searchTerm)}\w*", RegexOptions.IgnoreCase);
-
                 // Iterate through the user data list to find matching results.
                 for (int i = 0; i < userDataList.Count; i++)
                 {
@@ -211,11 +210,16 @@ namespace AddressBook_App
                     // Remove the user's data from 'userDataList'
                     userDataList.RemoveAt(indexToRemove);
 
-                    // Remove the index of the removed user from 'searchResultsIndices'
-                    searchResultsIndices.Remove(indexToRemove);
+                    // Create a new list for updated search results indices
+                    List<int> updatedSearchResultsIndices = new List<int>();
 
-                    // Remove the selected user from the 'listBox1' control
-                    listBox1.Items.RemoveAt(selectedIndex);
+                    // Populate the updated list with valid indices
+                    for (int i = 0; i < userDataList.Count; i++)
+                    {
+                        updatedSearchResultsIndices.Add(i);
+                    }
+
+                    listBox1.Items.Clear();
 
                     // Update the displayed search results
                     DisplaySearchResults();
