@@ -25,10 +25,14 @@ namespace AddressBook_App
             InitializeComponent();
 
             // Load user data from a file when the form is created
+
             userDataList = LoadUserData(); /* userDataList = [
                 ["Torsten Berglund", " Upplandsgatan 67", " 113 28", " stockholm", " +46785214", " hfgt@ghm.com"],
                 ["Bostonn lund", " Upplan 67", " 113 28", " Dhakackholm", " +46785214", " hfgt@ghm.com"]
                                                              ]*/
+            userDataList = LoadUserData(); // 
+
+            // Load one integer List
 
             searchResultsIndices = new List<int>();
         }
