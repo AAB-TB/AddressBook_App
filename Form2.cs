@@ -19,20 +19,26 @@ namespace AddressBook_App
 
         private void AdminBtn_Click(object sender, EventArgs e)
         {
+            // Get the values entered in the textboxes for new admin registration.
             string UserName = NewAdminName.Text;
             string UserPassword = NewAdminPass.Text;
             string confirmPass = NewAdminPassConfirm.Text;
 
+            // Check if the entered password matches the confirmation password.
             if (UserPassword == confirmPass)
             {
                 try
                 {
+                    // Specify the file path where admin credentials will be stored.
                     string filePath = @"D:\Visual Studio c#\AddressBook_App\Admin.txt";
 
+                    // Use a StreamWriter to append the new admin's credentials to the file.
                     using (StreamWriter writer = new StreamWriter(filePath, true))
                     {
                         writer.WriteLine($"{UserName},{UserPassword}");
                     }
+
+                    // Clear the input fields and display a success message in the "Reg" label.
                     NewAdminName.Clear();
                     NewAdminPass.Clear();
                     NewAdminPassConfirm.Clear();
