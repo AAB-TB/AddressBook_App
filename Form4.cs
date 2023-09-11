@@ -34,6 +34,11 @@ namespace AddressBook_App
                 Reg.Text = "Please fill in all mandatory fields.";
                 return;
             }
+            if (!IsValidPostalCode(postalCode))
+            {
+                Reg.Text = "Please enter a valid postal code (numbers only).";
+                return;
+            }
 
             if (!IsValidPhoneNumber(telephone))
             {
@@ -77,6 +82,7 @@ namespace AddressBook_App
             NewEmail.Clear();
         }
 
+         
         private bool IsValidPhoneNumber(string phoneNumber)
         {
             return Regex.IsMatch(phoneNumber, @"\+[\d]{1,4}[-\s]?[\d]+");
@@ -93,6 +99,12 @@ namespace AddressBook_App
             {
                 return false;
             }
+        }
+
+        private bool IsValidPostalCode(string postalCode)
+        {
+            // Check if the postal code contains only numeric characters
+            return Regex.IsMatch(postalCode, @"^[0-9]+$");
         }
 
         private void MainMenuBtn_Click(object sender, EventArgs e)
