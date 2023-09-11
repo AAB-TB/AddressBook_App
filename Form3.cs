@@ -25,7 +25,9 @@ namespace AddressBook_App
             InitializeComponent();
 
             // Load user data from a file when the form is created
-            userDataList = LoadUserData();
+            userDataList = LoadUserData(); // 
+
+            // Load one integer List
             searchResultsIndices = new List<int>();
         }
 
