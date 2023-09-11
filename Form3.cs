@@ -4,14 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Text.RegularExpressions;
+
 
 namespace AddressBook_App
 {
@@ -62,9 +61,13 @@ namespace AddressBook_App
             listBox1.Items.Clear();
             foreach (int index in searchResultsIndices)
             {
-                string[] userData = userDataList[index];
-                listBox1.Items.Add(userData[0]);
+                if (index >= 0 && index < userDataList.Count)
+                {
+                    string[] userData = userDataList[index];
+                    listBox1.Items.Add(userData[0]);
+                }
             }
+                    
         }
 
 
@@ -110,13 +113,15 @@ namespace AddressBook_App
             {
                 searchResultsIndices.Clear();
 
+                Regex regex = new Regex($@"\b{Regex.Escape(searchTerm)}\w*", RegexOptions.IgnoreCase);
+
                 for (int i = 0; i < userDataList.Count; i++)
                 {
                     string[] userData = userDataList[i];
                     string name = userData[0].ToLower();
                     string postalArea = userData[3].ToLower();
 
-                    if (name == searchTerm || postalArea == searchTerm)
+                    if ((regex.IsMatch(name) || regex.IsMatch(postalArea)))
                     {
                         searchResultsIndices.Add(i);
                     }
@@ -132,6 +137,7 @@ namespace AddressBook_App
             {
                 int selectedIndex = listBox1.SelectedIndex;
                 string selectedUserName = listBox1.SelectedItem.ToString();
+
                 int indexToRemove = -1;
 
                 for (int i = 0; i < userDataList.Count; i++)
@@ -149,7 +155,7 @@ namespace AddressBook_App
                     RemoveUserData(userDataList[indexToRemove]);
                     userDataList.RemoveAt(indexToRemove);
                     searchResultsIndices.Remove(indexToRemove);
-                    listBox1.Items.Clear();
+                    listBox1.Items.RemoveAt(selectedIndex);
                     DisplaySearchResults();
                     Reg.Text = "User removed successfully!";
 
