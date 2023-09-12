@@ -230,7 +230,7 @@
             // 
             UpdateBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             UpdateBtn.ForeColor = SystemColors.HotTrack;
-            UpdateBtn.Location = new Point(69, 534);
+            UpdateBtn.Location = new Point(69, 562);
             UpdateBtn.Name = "UpdateBtn";
             UpdateBtn.Size = new Size(727, 29);
             UpdateBtn.TabIndex = 19;
@@ -242,7 +242,7 @@
             // 
             MainMenuBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             MainMenuBtn.ForeColor = SystemColors.HotTrack;
-            MainMenuBtn.Location = new Point(69, 601);
+            MainMenuBtn.Location = new Point(69, 620);
             MainMenuBtn.Name = "MainMenuBtn";
             MainMenuBtn.Size = new Size(724, 29);
             MainMenuBtn.TabIndex = 20;
@@ -254,7 +254,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(201, 506);
+            Reg.Location = new Point(73, 519);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 21;
@@ -273,7 +273,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
-            ClientSize = new Size(882, 661);
+            ClientSize = new Size(882, 700);
             Controls.Add(Reg);
             Controls.Add(MainMenuBtn);
             Controls.Add(UpdateBtn);
@@ -281,7 +281,6 @@
             Controls.Add(label1);
             Controls.Add(UserName);
             Name = "Form5";
-            Text = "Form5";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();

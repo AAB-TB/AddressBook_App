@@ -36,7 +36,6 @@
             SignOutBtn = new Button();
             RemoveBtn = new Button();
             Reg = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ShowAllUsersBtn = new Button();
             label3 = new Label();
             SuspendLayout();
@@ -126,7 +125,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(101, 439);
+            Reg.Location = new Point(258, 639);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 14;
@@ -160,7 +159,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
-            ClientSize = new Size(882, 661);
+            ClientSize = new Size(882, 700);
             Controls.Add(label3);
             Controls.Add(ShowAllUsersBtn);
             Controls.Add(Reg);
@@ -172,7 +171,6 @@
             Controls.Add(SearchBtn);
             Controls.Add(SearchBox);
             Name = "Form3";
-            Text = "Form3";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -187,7 +185,6 @@
         private Button SignOutBtn;
         private Button RemoveBtn;
         private Label Reg;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button ShowAllUsersBtn;
         private Label label3;
     }

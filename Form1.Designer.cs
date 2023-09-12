@@ -66,7 +66,7 @@
             label3.BackColor = SystemColors.Info;
             label3.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(207, 453);
+            label3.Location = new Point(207, 484);
             label3.Name = "label3";
             label3.Size = new Size(273, 25);
             label3.TabIndex = 2;
@@ -98,7 +98,7 @@
             SignInBtn.BackColor = SystemColors.Info;
             SignInBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             SignInBtn.ForeColor = SystemColors.MenuHighlight;
-            SignInBtn.Location = new Point(207, 357);
+            SignInBtn.Location = new Point(207, 353);
             SignInBtn.Name = "SignInBtn";
             SignInBtn.Size = new Size(436, 29);
             SignInBtn.TabIndex = 5;
@@ -111,7 +111,7 @@
             SignUpBtn.BackColor = SystemColors.Info;
             SignUpBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             SignUpBtn.ForeColor = SystemColors.MenuHighlight;
-            SignUpBtn.Location = new Point(527, 451);
+            SignUpBtn.Location = new Point(527, 480);
             SignUpBtn.Name = "SignUpBtn";
             SignUpBtn.Size = new Size(116, 29);
             SignUpBtn.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(139, 319);
+            Reg.Location = new Point(207, 414);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 7;
@@ -133,7 +133,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
-            ClientSize = new Size(882, 661);
+            ClientSize = new Size(882, 700);
             Controls.Add(Reg);
             Controls.Add(SignUpBtn);
             Controls.Add(SignInBtn);
@@ -143,7 +143,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Authentication Form";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -132,7 +132,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(147, 364);
+            Reg.Location = new Point(219, 468);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 9;
@@ -154,7 +154,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
-            ClientSize = new Size(882, 661);
+            ClientSize = new Size(882, 700);
             Controls.Add(label4);
             Controls.Add(Reg);
             Controls.Add(GoToSignInBtn);
@@ -166,7 +166,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form2";
-            Text = "Form2";
             ResumeLayout(false);
             PerformLayout();
         }
