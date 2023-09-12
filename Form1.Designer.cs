@@ -75,6 +75,7 @@
             // UserName
             // 
             UserName.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            UserName.ForeColor = SystemColors.MenuHighlight;
             UserName.Location = new Point(207, 162);
             UserName.Name = "UserName";
             UserName.PlaceholderText = "Enter User Name";
@@ -84,6 +85,7 @@
             // UserPassword
             // 
             UserPassword.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            UserPassword.ForeColor = SystemColors.MenuHighlight;
             UserPassword.Location = new Point(207, 267);
             UserPassword.Name = "UserPassword";
             UserPassword.PasswordChar = '*';

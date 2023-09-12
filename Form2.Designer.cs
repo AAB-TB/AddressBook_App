@@ -77,6 +77,7 @@
             // NewAdminName
             // 
             NewAdminName.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            NewAdminName.ForeColor = SystemColors.MenuHighlight;
             NewAdminName.Location = new Point(219, 127);
             NewAdminName.Name = "NewAdminName";
             NewAdminName.PlaceholderText = "Enter Your Name";
@@ -86,6 +87,7 @@
             // NewAdminPass
             // 
             NewAdminPass.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            NewAdminPass.ForeColor = SystemColors.MenuHighlight;
             NewAdminPass.Location = new Point(219, 215);
             NewAdminPass.Name = "NewAdminPass";
             NewAdminPass.PlaceholderText = "Password";
@@ -95,6 +97,7 @@
             // NewAdminPassConfirm
             // 
             NewAdminPassConfirm.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            NewAdminPassConfirm.ForeColor = SystemColors.MenuHighlight;
             NewAdminPassConfirm.Location = new Point(219, 312);
             NewAdminPassConfirm.Name = "NewAdminPassConfirm";
             NewAdminPassConfirm.PlaceholderText = "Confirm Password";
