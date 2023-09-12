@@ -48,7 +48,8 @@
             // NewUserName
             // 
             NewUserName.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewUserName.Location = new Point(315, 64);
+            NewUserName.ForeColor = SystemColors.HotTrack;
+            NewUserName.Location = new Point(209, 51);
             NewUserName.Name = "NewUserName";
             NewUserName.PlaceholderText = "Enter Your Name";
             NewUserName.Size = new Size(475, 34);
@@ -58,7 +59,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(191, 63);
+            label1.ForeColor = SystemColors.Info;
+            label1.Location = new Point(209, 23);
             label1.Name = "label1";
             label1.Size = new Size(85, 25);
             label1.TabIndex = 7;
@@ -68,7 +70,8 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(55, 121);
+            label2.ForeColor = SystemColors.Info;
+            label2.Location = new Point(209, 99);
             label2.Name = "label2";
             label2.Size = new Size(221, 25);
             label2.TabIndex = 9;
@@ -77,7 +80,8 @@
             // NewAddress
             // 
             NewAddress.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewAddress.Location = new Point(315, 123);
+            NewAddress.ForeColor = SystemColors.HotTrack;
+            NewAddress.Location = new Point(209, 127);
             NewAddress.Name = "NewAddress";
             NewAddress.PlaceholderText = "Enter Street Adress";
             NewAddress.Size = new Size(475, 34);
@@ -87,7 +91,8 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(101, 175);
+            label3.ForeColor = SystemColors.Info;
+            label3.Location = new Point(209, 187);
             label3.Name = "label3";
             label3.Size = new Size(175, 25);
             label3.TabIndex = 11;
@@ -96,7 +101,8 @@
             // NewPostalCode
             // 
             NewPostalCode.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewPostalCode.Location = new Point(315, 174);
+            NewPostalCode.ForeColor = SystemColors.HotTrack;
+            NewPostalCode.Location = new Point(209, 215);
             NewPostalCode.Name = "NewPostalCode";
             NewPostalCode.PlaceholderText = "Enter Postal Code";
             NewPostalCode.Size = new Size(475, 34);
@@ -106,7 +112,8 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(124, 287);
+            label4.ForeColor = SystemColors.Info;
+            label4.Location = new Point(209, 364);
             label4.Name = "label4";
             label4.Size = new Size(152, 25);
             label4.TabIndex = 13;
@@ -115,7 +122,8 @@
             // NewPostalArea
             // 
             NewPostalArea.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewPostalArea.Location = new Point(315, 233);
+            NewPostalArea.ForeColor = SystemColors.HotTrack;
+            NewPostalArea.Location = new Point(209, 304);
             NewPostalArea.Name = "NewPostalArea";
             NewPostalArea.PlaceholderText = "Enter Postal Area";
             NewPostalArea.Size = new Size(475, 34);
@@ -125,7 +133,8 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(93, 232);
+            label5.ForeColor = SystemColors.Info;
+            label5.Location = new Point(209, 276);
             label5.Name = "label5";
             label5.Size = new Size(183, 25);
             label5.TabIndex = 15;
@@ -134,7 +143,8 @@
             // NewTelephone
             // 
             NewTelephone.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewTelephone.Location = new Point(315, 289);
+            NewTelephone.ForeColor = SystemColors.HotTrack;
+            NewTelephone.Location = new Point(209, 392);
             NewTelephone.Name = "NewTelephone";
             NewTelephone.PlaceholderText = "Telephone Nummber";
             NewTelephone.Size = new Size(475, 34);
@@ -144,7 +154,8 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(184, 345);
+            label6.ForeColor = SystemColors.Info;
+            label6.Location = new Point(209, 455);
             label6.Name = "label6";
             label6.Size = new Size(92, 25);
             label6.TabIndex = 17;
@@ -153,7 +164,8 @@
             // NewEmail
             // 
             NewEmail.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewEmail.Location = new Point(315, 346);
+            NewEmail.ForeColor = SystemColors.HotTrack;
+            NewEmail.Location = new Point(209, 483);
             NewEmail.Name = "NewEmail";
             NewEmail.PlaceholderText = "exampel@example.com";
             NewEmail.Size = new Size(475, 34);
@@ -162,9 +174,10 @@
             // SaveBtn
             // 
             SaveBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            SaveBtn.Location = new Point(402, 407);
+            SaveBtn.ForeColor = SystemColors.Highlight;
+            SaveBtn.Location = new Point(209, 547);
             SaveBtn.Name = "SaveBtn";
-            SaveBtn.Size = new Size(149, 29);
+            SaveBtn.Size = new Size(475, 29);
             SaveBtn.TabIndex = 18;
             SaveBtn.Text = "Save";
             SaveBtn.UseVisualStyleBackColor = true;
@@ -173,9 +186,10 @@
             // MainMenuBtn
             // 
             MainMenuBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            MainMenuBtn.Location = new Point(641, 453);
+            MainMenuBtn.ForeColor = SystemColors.Highlight;
+            MainMenuBtn.Location = new Point(209, 604);
             MainMenuBtn.Name = "MainMenuBtn";
-            MainMenuBtn.Size = new Size(149, 29);
+            MainMenuBtn.Size = new Size(479, 29);
             MainMenuBtn.TabIndex = 19;
             MainMenuBtn.Text = "Main Menu";
             MainMenuBtn.UseVisualStyleBackColor = true;
@@ -185,7 +199,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(210, 484);
+            Reg.Location = new Point(246, 577);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 20;
@@ -195,7 +209,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
-            ClientSize = new Size(882, 553);
+            ClientSize = new Size(882, 661);
             Controls.Add(Reg);
             Controls.Add(MainMenuBtn);
             Controls.Add(SaveBtn);
