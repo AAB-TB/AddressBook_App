@@ -78,7 +78,7 @@
             // 
             ViewDetailsBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             ViewDetailsBtn.ForeColor = SystemColors.MenuHighlight;
-            ViewDetailsBtn.Location = new Point(29, 374);
+            ViewDetailsBtn.Location = new Point(29, 277);
             ViewDetailsBtn.Name = "ViewDetailsBtn";
             ViewDetailsBtn.Size = new Size(180, 29);
             ViewDetailsBtn.TabIndex = 10;
@@ -135,7 +135,7 @@
             // 
             ShowAllUsersBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             ShowAllUsersBtn.ForeColor = SystemColors.MenuHighlight;
-            ShowAllUsersBtn.Location = new Point(29, 281);
+            ShowAllUsersBtn.Location = new Point(29, 366);
             ShowAllUsersBtn.Name = "ShowAllUsersBtn";
             ShowAllUsersBtn.Size = new Size(180, 29);
             ShowAllUsersBtn.TabIndex = 15;
