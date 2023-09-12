@@ -90,7 +90,7 @@ namespace AddressBook_App
             NewEmail.Clear();
         }
 
-         
+
         private bool IsValidPhoneNumber(string phoneNumber)
         {
             // Define a regular expression pattern for a valid phone number
@@ -120,7 +120,7 @@ namespace AddressBook_App
 
         private bool IsValidPostalCode(string postalCode)
         {
-            
+
             // Check if the postal code contains only numeric characters
             // The regular expression pattern ^[0-9]+$ checks that the entire string
             // consists of one or more digits (0-9) from start (^) to finish ($).

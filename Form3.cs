@@ -84,15 +84,15 @@ namespace AddressBook_App
             foreach (int index in searchResultsIndices) //foreach loop iterate every elements not from 0
             {
                 // Check if the index is within the valid range of 'userDataList'.
-               if (index >= 0 && index < userDataList.Count)
+                if (index >= 0 && index < userDataList.Count)
                 {
                     // Retrieve the user data for the current index.
                     string[] userData = userDataList[index];
                     // Add the user's name (located at index 0) to the 'listBox1'.
                     listBox1.Items.Add(userData[0]);
-               }
+                }
             }
-                    
+
         }
 
 
@@ -111,7 +111,7 @@ namespace AddressBook_App
             this.Hide();
         }
 
-        
+
         private void ViewDetailsBtn_Click(object sender, EventArgs e)
         {
             // Check if an item is selected in the 'listBox1'
