@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label3 = new Label();
             UserName = new TextBox();
             UserPassword = new TextBox();
@@ -38,34 +37,12 @@
             Reg = new Label();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Info;
-            label1.Location = new Point(207, 134);
-            label1.Name = "label1";
-            label1.Size = new Size(152, 25);
-            label1.TabIndex = 0;
-            label1.Text = "User Name:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Info;
-            label2.Location = new Point(207, 239);
-            label2.Name = "label2";
-            label2.Size = new Size(145, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Password:";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.Info;
+            label3.BackColor = Color.CornflowerBlue;
             label3.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.Highlight;
+            label3.ForeColor = Color.DarkBlue;
             label3.Location = new Point(207, 484);
             label3.Name = "label3";
             label3.Size = new Size(273, 25);
@@ -74,9 +51,10 @@
             // 
             // UserName
             // 
+            UserName.BackColor = Color.CornflowerBlue;
             UserName.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            UserName.ForeColor = SystemColors.MenuHighlight;
-            UserName.Location = new Point(207, 162);
+            UserName.ForeColor = Color.DarkBlue;
+            UserName.Location = new Point(207, 184);
             UserName.Name = "UserName";
             UserName.PlaceholderText = "Enter User Name";
             UserName.Size = new Size(436, 34);
@@ -84,9 +62,10 @@
             // 
             // UserPassword
             // 
+            UserPassword.BackColor = Color.CornflowerBlue;
             UserPassword.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            UserPassword.ForeColor = SystemColors.MenuHighlight;
-            UserPassword.Location = new Point(207, 267);
+            UserPassword.ForeColor = Color.DarkBlue;
+            UserPassword.Location = new Point(207, 263);
             UserPassword.Name = "UserPassword";
             UserPassword.PasswordChar = '*';
             UserPassword.PlaceholderText = "Enter Password";
@@ -95,9 +74,9 @@
             // 
             // SignInBtn
             // 
-            SignInBtn.BackColor = SystemColors.Info;
+            SignInBtn.BackColor = Color.CornflowerBlue;
             SignInBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            SignInBtn.ForeColor = SystemColors.MenuHighlight;
+            SignInBtn.ForeColor = Color.DarkBlue;
             SignInBtn.Location = new Point(207, 353);
             SignInBtn.Name = "SignInBtn";
             SignInBtn.Size = new Size(436, 29);
@@ -108,9 +87,9 @@
             // 
             // SignUpBtn
             // 
-            SignUpBtn.BackColor = SystemColors.Info;
+            SignUpBtn.BackColor = Color.CornflowerBlue;
             SignUpBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            SignUpBtn.ForeColor = SystemColors.MenuHighlight;
+            SignUpBtn.ForeColor = Color.DarkBlue;
             SignUpBtn.Location = new Point(527, 480);
             SignUpBtn.Name = "SignUpBtn";
             SignUpBtn.Size = new Size(116, 29);
@@ -123,7 +102,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(122, 417);
+            Reg.Location = new Point(122, 427);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 7;
@@ -133,6 +112,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(882, 700);
             Controls.Add(Reg);
             Controls.Add(SignUpBtn);
@@ -140,17 +120,16 @@
             Controls.Add(UserPassword);
             Controls.Add(UserName);
             Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
+            MaximizeBox = false;
             Name = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
         private Label label3;
         private TextBox UserName;
         private TextBox UserPassword;

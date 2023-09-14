@@ -30,7 +30,7 @@ namespace AddressBook_App
                 Reg.Text = "Please fill in all required fields.";
             }
             // Check if the entered password matches the confirmation password.
-             else if (UserPassword == confirmPass)
+            else if (UserPassword == confirmPass)
             {
                 try
                 {
@@ -65,6 +65,12 @@ namespace AddressBook_App
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            AdminBtn.Select();
+
         }
     }
 }

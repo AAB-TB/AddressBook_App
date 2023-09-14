@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -56,8 +57,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.CornflowerBlue;
             label1.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Info;
+            label1.ForeColor = Color.DarkBlue;
             label1.Location = new Point(367, 58);
             label1.Name = "label1";
             label1.Size = new Size(85, 25);
@@ -76,7 +78,7 @@
             // 
             // tabPage1
             // 
-            tabPage1.BackColor = Color.LightSkyBlue;
+            tabPage1.BackColor = Color.CornflowerBlue;
             tabPage1.BorderStyle = BorderStyle.Fixed3D;
             tabPage1.Controls.Add(PostalArea);
             tabPage1.Controls.Add(PostalCode);
@@ -93,8 +95,9 @@
             // 
             // PostalArea
             // 
+            PostalArea.BackColor = Color.CornflowerBlue;
             PostalArea.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            PostalArea.ForeColor = SystemColors.HotTrack;
+            PostalArea.ForeColor = Color.DarkBlue;
             PostalArea.Location = new Point(280, 169);
             PostalArea.Name = "PostalArea";
             PostalArea.Size = new Size(337, 34);
@@ -102,8 +105,9 @@
             // 
             // PostalCode
             // 
+            PostalCode.BackColor = Color.CornflowerBlue;
             PostalCode.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            PostalCode.ForeColor = SystemColors.HotTrack;
+            PostalCode.ForeColor = Color.DarkBlue;
             PostalCode.Location = new Point(280, 114);
             PostalCode.Name = "PostalCode";
             PostalCode.Size = new Size(337, 34);
@@ -111,8 +115,9 @@
             // 
             // StreetAddress
             // 
+            StreetAddress.BackColor = Color.CornflowerBlue;
             StreetAddress.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            StreetAddress.ForeColor = SystemColors.HotTrack;
+            StreetAddress.ForeColor = Color.DarkBlue;
             StreetAddress.Location = new Point(280, 66);
             StreetAddress.Name = "StreetAddress";
             StreetAddress.Size = new Size(337, 34);
@@ -122,7 +127,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.Highlight;
+            label4.ForeColor = Color.DarkBlue;
             label4.Location = new Point(53, 66);
             label4.Name = "label4";
             label4.Size = new Size(221, 25);
@@ -133,7 +138,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.HotTrack;
+            label3.ForeColor = Color.DarkBlue;
             label3.Location = new Point(99, 123);
             label3.Name = "label3";
             label3.Size = new Size(175, 25);
@@ -144,7 +149,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.HotTrack;
+            label2.ForeColor = Color.DarkBlue;
             label2.Location = new Point(91, 172);
             label2.Name = "label2";
             label2.Size = new Size(183, 25);
@@ -153,7 +158,7 @@
             // 
             // tabPage2
             // 
-            tabPage2.BackColor = Color.SkyBlue;
+            tabPage2.BackColor = Color.CornflowerBlue;
             tabPage2.BorderStyle = BorderStyle.Fixed3D;
             tabPage2.Controls.Add(Email);
             tabPage2.Controls.Add(Telephone);
@@ -170,8 +175,9 @@
             // 
             // Email
             // 
+            Email.BackColor = Color.CornflowerBlue;
             Email.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Email.ForeColor = SystemColors.HotTrack;
+            Email.ForeColor = Color.DarkBlue;
             Email.Location = new Point(229, 112);
             Email.Name = "Email";
             Email.Size = new Size(337, 34);
@@ -179,8 +185,9 @@
             // 
             // Telephone
             // 
+            Telephone.BackColor = Color.CornflowerBlue;
             Telephone.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Telephone.ForeColor = SystemColors.HotTrack;
+            Telephone.ForeColor = Color.DarkBlue;
             Telephone.Location = new Point(229, 64);
             Telephone.Name = "Telephone";
             Telephone.Size = new Size(337, 34);
@@ -190,7 +197,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.HotTrack;
+            label8.ForeColor = Color.DarkBlue;
             label8.Location = new Point(71, 67);
             label8.Name = "label8";
             label8.Size = new Size(152, 25);
@@ -201,7 +208,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.HotTrack;
+            label9.ForeColor = Color.DarkBlue;
             label9.Location = new Point(131, 115);
             label9.Name = "label9";
             label9.Size = new Size(92, 25);
@@ -228,26 +235,28 @@
             // 
             // UpdateBtn
             // 
+            UpdateBtn.BackColor = Color.CornflowerBlue;
             UpdateBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            UpdateBtn.ForeColor = SystemColors.HotTrack;
+            UpdateBtn.ForeColor = Color.DarkBlue;
             UpdateBtn.Location = new Point(69, 562);
             UpdateBtn.Name = "UpdateBtn";
             UpdateBtn.Size = new Size(727, 29);
             UpdateBtn.TabIndex = 19;
             UpdateBtn.Text = "Update";
-            UpdateBtn.UseVisualStyleBackColor = true;
+            UpdateBtn.UseVisualStyleBackColor = false;
             UpdateBtn.Click += UpdateBtn_Click;
             // 
             // MainMenuBtn
             // 
+            MainMenuBtn.BackColor = Color.CornflowerBlue;
             MainMenuBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            MainMenuBtn.ForeColor = SystemColors.HotTrack;
+            MainMenuBtn.ForeColor = Color.DarkBlue;
             MainMenuBtn.Location = new Point(69, 620);
             MainMenuBtn.Name = "MainMenuBtn";
             MainMenuBtn.Size = new Size(724, 29);
             MainMenuBtn.TabIndex = 20;
             MainMenuBtn.Text = "Main Menu";
-            MainMenuBtn.UseVisualStyleBackColor = true;
+            MainMenuBtn.UseVisualStyleBackColor = false;
             MainMenuBtn.Click += MainMenuBtn_Click;
             // 
             // Reg
@@ -261,8 +270,9 @@
             // 
             // UserName
             // 
+            UserName.BackColor = Color.CornflowerBlue;
             UserName.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            UserName.ForeColor = SystemColors.HotTrack;
+            UserName.ForeColor = Color.DarkBlue;
             UserName.Location = new Point(69, 86);
             UserName.Name = "UserName";
             UserName.Size = new Size(720, 34);
@@ -273,6 +283,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(882, 700);
             Controls.Add(Reg);
             Controls.Add(MainMenuBtn);
@@ -280,7 +291,11 @@
             Controls.Add(tabControl1);
             Controls.Add(label1);
             Controls.Add(UserName);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
+            MaximizeBox = false;
             Name = "Form5";
+            Load += Form5_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
