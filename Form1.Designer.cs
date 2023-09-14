@@ -121,8 +121,10 @@
             Controls.Add(UserName);
             Controls.Add(label3);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
             MaximizeBox = false;
             Name = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
