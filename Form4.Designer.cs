@@ -136,7 +136,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(186, 596);
+            Reg.Location = new Point(185, 542);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 20;
@@ -158,8 +158,10 @@
             Controls.Add(NewAddress);
             Controls.Add(NewUserName);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
             MaximizeBox = false;
             Name = "Form4";
+            Load += Form4_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -287,7 +287,9 @@ namespace AddressBook_App
             DisplaySearchResults();
         }
 
-
-
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            SearchBtn.Select();
+        }
     }
 }

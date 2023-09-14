@@ -292,8 +292,10 @@
             Controls.Add(label1);
             Controls.Add(UserName);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
             MaximizeBox = false;
             Name = "Form5";
+            Load += Form5_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();

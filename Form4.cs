@@ -133,6 +133,11 @@ namespace AddressBook_App
             form3.Show();
             this.Hide();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            SaveBtn.Select();
+        }
     }
 
 

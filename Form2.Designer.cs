@@ -101,7 +101,7 @@
             // 
             Reg.AutoSize = true;
             Reg.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Reg.Location = new Point(219, 468);
+            Reg.Location = new Point(204, 444);
             Reg.Name = "Reg";
             Reg.Size = new Size(0, 25);
             Reg.TabIndex = 9;
@@ -133,8 +133,10 @@
             Controls.Add(NewAdminPass);
             Controls.Add(NewAdminName);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
             MaximizeBox = false;
             Name = "Form2";
+            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }

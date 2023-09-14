@@ -87,7 +87,9 @@ namespace AddressBook_App
             }
         }
 
-
-
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            UpdateBtn.Select();
+        }
     }
 }

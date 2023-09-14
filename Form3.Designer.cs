@@ -181,8 +181,10 @@
             Controls.Add(SearchBtn);
             Controls.Add(SearchBox);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            KeyPreview = true;
             MaximizeBox = false;
             Name = "Form3";
+            Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();
         }

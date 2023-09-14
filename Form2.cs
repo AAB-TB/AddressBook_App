@@ -66,5 +66,11 @@ namespace AddressBook_App
             form1.Show();
             this.Hide();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            AdminBtn.Select();
+
+        }
     }
 }
