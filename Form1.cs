@@ -18,19 +18,29 @@ namespace AddressBook_App
             string enteredUserName = UserName.Text;
             string enteredPassword = UserPassword.Text;
 
-            // Call the CheckCredentials method to verify the entered username and password.
-            if (CheckCredentials(enteredUserName, enteredPassword))
+            // Check if either of the textboxes is empty.
+            if (string.IsNullOrEmpty(enteredUserName) || string.IsNullOrEmpty(enteredPassword))
             {
-                // If the credentials are correct, create a new instance of Form3 and show it.
-                Form3 form3 = new Form3();
-                form3.Show();
-                // Hide the current form (Form1).
-                this.Hide();
+                // Display an error message if either field is empty.
+                Reg.Text = "Please enter both username and password.";
             }
             else
             {
-                // If the credentials are incorrect, display an error message in the "Reg" label.
-                Reg.Text = "Incorrect username or password. Please try again.";
+
+                // Call the CheckCredentials method to verify the entered username and password.
+                if (CheckCredentials(enteredUserName, enteredPassword))
+                {
+                    // If the credentials are correct, create a new instance of Form3 and show it.
+                    Form3 form3 = new Form3();
+                    form3.Show();
+                    // Hide the current form (Form1).
+                    this.Hide();
+                }
+                else
+                {
+                    // If the credentials are incorrect, display an error message in the "Reg" label.
+                    Reg.Text = "Incorrect username or password. Please try again.";
+                }
             }
         }
 
