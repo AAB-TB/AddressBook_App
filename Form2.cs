@@ -23,9 +23,14 @@ namespace AddressBook_App
             string UserName = NewAdminName.Text;
             string UserPassword = NewAdminPass.Text;
             string confirmPass = NewAdminPassConfirm.Text;
-
+            // Check if any of the required fields are empty.
+            if (string.IsNullOrEmpty(UserName) || string.IsNullOrEmpty(UserPassword) || string.IsNullOrEmpty(confirmPass))
+            {
+                // Display an error message if any of the required fields are empty.
+                Reg.Text = "Please fill in all required fields.";
+            }
             // Check if the entered password matches the confirmation password.
-            if (UserPassword == confirmPass)
+             else if (UserPassword == confirmPass)
             {
                 try
                 {
