@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             SearchBox = new TextBox();
             SearchBtn = new Button();
             listBox1 = new ListBox();
@@ -42,8 +43,9 @@
             // 
             // SearchBox
             // 
+            SearchBox.BackColor = Color.CornflowerBlue;
             SearchBox.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            SearchBox.ForeColor = SystemColors.MenuHighlight;
+            SearchBox.ForeColor = Color.DarkBlue;
             SearchBox.Location = new Point(258, 58);
             SearchBox.Name = "SearchBox";
             SearchBox.PlaceholderText = "Enter Name or Postal Area";
@@ -52,20 +54,22 @@
             // 
             // SearchBtn
             // 
+            SearchBtn.BackColor = Color.CornflowerBlue;
             SearchBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            SearchBtn.ForeColor = SystemColors.Highlight;
+            SearchBtn.ForeColor = Color.DarkBlue;
             SearchBtn.Location = new Point(460, 121);
             SearchBtn.Name = "SearchBtn";
             SearchBtn.Size = new Size(149, 34);
             SearchBtn.TabIndex = 8;
             SearchBtn.Text = "Search";
-            SearchBtn.UseVisualStyleBackColor = true;
+            SearchBtn.UseVisualStyleBackColor = false;
             SearchBtn.Click += SearchBtn_Click;
             // 
             // listBox1
             // 
+            listBox1.BackColor = Color.CornflowerBlue;
             listBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            listBox1.ForeColor = SystemColors.MenuHighlight;
+            listBox1.ForeColor = Color.DarkBlue;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 25;
             listBox1.Location = new Point(258, 198);
@@ -75,50 +79,54 @@
             // 
             // ViewDetailsBtn
             // 
+            ViewDetailsBtn.BackColor = Color.CornflowerBlue;
             ViewDetailsBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            ViewDetailsBtn.ForeColor = SystemColors.MenuHighlight;
+            ViewDetailsBtn.ForeColor = Color.DarkBlue;
             ViewDetailsBtn.Location = new Point(29, 277);
             ViewDetailsBtn.Name = "ViewDetailsBtn";
             ViewDetailsBtn.Size = new Size(180, 29);
             ViewDetailsBtn.TabIndex = 10;
             ViewDetailsBtn.Text = "View ";
-            ViewDetailsBtn.UseVisualStyleBackColor = true;
+            ViewDetailsBtn.UseVisualStyleBackColor = false;
             ViewDetailsBtn.Click += ViewDetailsBtn_Click;
             // 
             // NewContactBtn
             // 
+            NewContactBtn.BackColor = Color.CornflowerBlue;
             NewContactBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            NewContactBtn.ForeColor = SystemColors.MenuHighlight;
+            NewContactBtn.ForeColor = Color.DarkBlue;
             NewContactBtn.Location = new Point(29, 198);
             NewContactBtn.Name = "NewContactBtn";
             NewContactBtn.Size = new Size(180, 29);
             NewContactBtn.TabIndex = 11;
             NewContactBtn.Text = "new Contact";
-            NewContactBtn.UseVisualStyleBackColor = true;
+            NewContactBtn.UseVisualStyleBackColor = false;
             NewContactBtn.Click += NewContactBtn_Click;
             // 
             // SignOutBtn
             // 
+            SignOutBtn.BackColor = Color.CornflowerBlue;
             SignOutBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            SignOutBtn.ForeColor = SystemColors.MenuHighlight;
+            SignOutBtn.ForeColor = Color.DarkBlue;
             SignOutBtn.Location = new Point(29, 561);
             SignOutBtn.Name = "SignOutBtn";
             SignOutBtn.Size = new Size(180, 29);
             SignOutBtn.TabIndex = 12;
             SignOutBtn.Text = "Sign Out";
-            SignOutBtn.UseVisualStyleBackColor = true;
+            SignOutBtn.UseVisualStyleBackColor = false;
             SignOutBtn.Click += SignOutBtn_Click;
             // 
             // RemoveBtn
             // 
+            RemoveBtn.BackColor = Color.CornflowerBlue;
             RemoveBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            RemoveBtn.ForeColor = SystemColors.MenuHighlight;
+            RemoveBtn.ForeColor = Color.DarkBlue;
             RemoveBtn.Location = new Point(29, 467);
             RemoveBtn.Name = "RemoveBtn";
             RemoveBtn.Size = new Size(180, 29);
             RemoveBtn.TabIndex = 13;
             RemoveBtn.Text = "Remove";
-            RemoveBtn.UseVisualStyleBackColor = true;
+            RemoveBtn.UseVisualStyleBackColor = false;
             RemoveBtn.Click += RemoveBtn_Click;
             // 
             // Reg
@@ -132,22 +140,23 @@
             // 
             // ShowAllUsersBtn
             // 
+            ShowAllUsersBtn.BackColor = Color.CornflowerBlue;
             ShowAllUsersBtn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            ShowAllUsersBtn.ForeColor = SystemColors.MenuHighlight;
+            ShowAllUsersBtn.ForeColor = Color.DarkBlue;
             ShowAllUsersBtn.Location = new Point(29, 366);
             ShowAllUsersBtn.Name = "ShowAllUsersBtn";
             ShowAllUsersBtn.Size = new Size(180, 29);
             ShowAllUsersBtn.TabIndex = 15;
             ShowAllUsersBtn.Text = "View All";
-            ShowAllUsersBtn.UseVisualStyleBackColor = true;
+            ShowAllUsersBtn.UseVisualStyleBackColor = false;
             ShowAllUsersBtn.Click += ShowAllUsersBtn_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.Info;
+            label3.BackColor = Color.CornflowerBlue;
             label3.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.Highlight;
+            label3.ForeColor = Color.DarkBlue;
             label3.Location = new Point(73, 121);
             label3.Name = "label3";
             label3.Size = new Size(75, 25);
@@ -159,6 +168,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(882, 700);
             Controls.Add(label3);
             Controls.Add(ShowAllUsersBtn);
@@ -170,6 +180,8 @@
             Controls.Add(listBox1);
             Controls.Add(SearchBtn);
             Controls.Add(SearchBox);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
             Name = "Form3";
             ResumeLayout(false);
             PerformLayout();
